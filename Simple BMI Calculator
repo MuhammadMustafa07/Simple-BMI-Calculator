@@ -1,0 +1,25 @@
+# Insert name, Height (metres) and Weight (kg)
+
+name1 = "MM"
+heightM1 = 1.8
+weightKg1 = 75
+
+name2 = "GG"
+heightM2 = 1.4
+weightKg2 = 65
+
+def bmiCalc(name, heightM, weightKg):
+    bmi = weightKg / (heightM ** 2)
+    txt = "bmi of {}: {}"
+    print(txt.format(name, bmi))
+    
+    if bmi < 25:
+        return name + " is not overweight"
+    else:
+        return name + " is overweight"
+        
+result1 = bmiCalc(name1, heightM1, weightKg1)
+result2 = bmiCalc(name2, heightM2, weightKg2)
+
+print(result1)
+print(result2)
