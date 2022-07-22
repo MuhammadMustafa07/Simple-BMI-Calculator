@@ -14,6 +14,8 @@ def bmiCalc(name, Height1, Weight1):
     
     if 25 > bmi > 18.5:
         return name + " is Healthy"
+    elif bmi > 30:
+        return name + " is obese"
     elif bmi > 25:
         return name + " is overweight"
     else:
